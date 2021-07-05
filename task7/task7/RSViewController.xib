@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RSViewController">
+            <connections>
+                <outlet property="button" destination="y3t-CN-2wz" id="8Gn-Bg-LLL"/>
+                <outlet property="login" destination="wQ5-pJ-wx9" id="R8N-kK-cpq"/>
+                <outlet property="oneButton" destination="ube-yi-sOf" id="w08-3p-fEz"/>
+                <outlet property="password" destination="KW1-Ao-fAi" id="aqY-gT-KTU"/>
+                <outlet property="result" destination="0jB-xI-ebM" id="fOu-xI-Y16"/>
+                <outlet property="secureView" destination="Bwm-bu-Srm" id="zV2-a0-1P0"/>
+                <outlet property="threeButton" destination="qjF-0V-cWo" id="LpB-sY-Bfg"/>
+                <outlet property="twoButton" destination="RMD-20-i0z" id="hhO-WH-Vu3"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RSSchool" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="avb-bO-RSo">
+                    <rect key="frame" x="78" y="80" width="218" height="43"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="43" id="S53-zt-Lbu"/>
+                        <constraint firstAttribute="width" constant="218" id="gfv-9m-3iI"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Login" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wQ5-pJ-wx9">
+                    <rect key="frame" x="36" y="203" width="303" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="gsh-cj-i7V"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KW1-Ao-fAi">
+                    <rect key="frame" x="36" y="267" width="303" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="RiL-3z-Kib"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y3t-CN-2wz">
+                    <rect key="frame" x="109" y="361" width="156" height="42"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="42" id="TCD-sM-F7D"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                    <state key="normal" title="Authorize">
+                        <color key="titleColor" name="LittleBoyBlue"/>
+                    </state>
+                    <state key="selected" image="person" catalog="system"/>
+                    <connections>
+                        <action selector="authorize:" destination="-1" eventType="touchUpInside" id="yF2-jQ-K4Z"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bwm-bu-Srm">
+                    <rect key="frame" x="70" y="470" width="235" height="147"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="—" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0jB-xI-ebM">
+                            <rect key="frame" x="45" y="20" width="145" height="34"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="34" id="R0b-Z9-MeM"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                            <color key="textColor" name="Black"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ube-yi-sOf">
+                            <rect key="frame" x="25" y="74" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="IcN-oy-cQ1"/>
+                                <constraint firstAttribute="width" constant="50" id="XDt-Tp-aL4"/>
+                                <constraint firstAttribute="height" constant="50" id="eEd-qT-hb4"/>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="lsX-bs-jcc"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                            <state key="normal" title="1">
+                                <color key="titleColor" name="LittleBoyBlue"/>
+                            </state>
+                            <connections>
+                                <action selector="oneAction:" destination="-1" eventType="touchUpInside" id="s6c-As-yFY"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qjF-0V-cWo">
+                            <rect key="frame" x="165" y="74" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="MQc-fK-e64"/>
+                                <constraint firstAttribute="height" constant="50" id="NqU-HI-7EY"/>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="UOB-fV-7cc"/>
+                                <constraint firstAttribute="width" constant="50" id="UOb-Va-lFO"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                            <state key="normal" title="3">
+                                <color key="titleColor" name="LittleBoyBlue"/>
+                            </state>
+                            <connections>
+                                <action selector="threeAction:" destination="-1" eventType="touchUpInside" id="dVr-ff-1sm"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RMD-20-i0z">
+                            <rect key="frame" x="95" y="74" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="4hx-O8-EBG"/>
+                                <constraint firstAttribute="height" constant="50" id="SOl-wv-btg"/>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="gbR-0q-WLb"/>
+                                <constraint firstAttribute="width" constant="50" id="xG1-Zb-1ao"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                            <state key="normal" title="2">
+                                <color key="titleColor" name="LittleBoyBlue"/>
+                            </state>
+                            <connections>
+                                <action selector="twoAction:" destination="-1" eventType="touchUpInside" id="7Z0-uv-AHj"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="0jB-xI-ebM" firstAttribute="leading" secondItem="Bwm-bu-Srm" secondAttribute="leading" constant="45" id="0Tp-Si-BZl"/>
+                        <constraint firstItem="RMD-20-i0z" firstAttribute="leading" secondItem="ube-yi-sOf" secondAttribute="trailing" constant="20" id="8Wk-w4-fnj"/>
+                        <constraint firstAttribute="bottom" secondItem="RMD-20-i0z" secondAttribute="bottom" constant="23" id="9N3-nx-8gM"/>
+                        <constraint firstAttribute="trailing" secondItem="qjF-0V-cWo" secondAttribute="trailing" constant="20" id="ER9-Q8-pfT"/>
+                        <constraint firstItem="RMD-20-i0z" firstAttribute="leading" secondItem="ube-yi-sOf" secondAttribute="trailing" constant="20" id="GLW-oa-ITD"/>
+                        <constraint firstAttribute="bottom" secondItem="ube-yi-sOf" secondAttribute="bottom" constant="23" id="OP4-lh-8Qp"/>
+                        <constraint firstItem="ube-yi-sOf" firstAttribute="leading" secondItem="Bwm-bu-Srm" secondAttribute="leading" constant="25" id="ahC-5F-RX9"/>
+                        <constraint firstAttribute="trailing" secondItem="0jB-xI-ebM" secondAttribute="trailing" constant="45" id="cSa-jW-lQn"/>
+                        <constraint firstItem="qjF-0V-cWo" firstAttribute="leading" secondItem="RMD-20-i0z" secondAttribute="trailing" constant="20" id="hBs-az-RsG"/>
+                        <constraint firstItem="0jB-xI-ebM" firstAttribute="top" secondItem="Bwm-bu-Srm" secondAttribute="top" constant="20" id="iCX-VQ-Dh2"/>
+                        <constraint firstAttribute="bottom" secondItem="qjF-0V-cWo" secondAttribute="bottom" constant="23" id="pgj-KN-bdn"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="KW1-Ao-fAi" firstAttribute="top" secondItem="wQ5-pJ-wx9" secondAttribute="bottom" constant="30" id="518-C0-M2b"/>
+                <constraint firstItem="avb-bO-RSo" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="78" id="7V9-Ur-G7p"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="Bwm-bu-Srm" secondAttribute="bottom" constant="50" id="BaB-Ln-YiO"/>
+                <constraint firstItem="KW1-Ao-fAi" firstAttribute="trailing" secondItem="wQ5-pJ-wx9" secondAttribute="trailing" id="G5w-Os-aoK"/>
+                <constraint firstItem="y3t-CN-2wz" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="109" id="GDR-Fo-7GF"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="y3t-CN-2wz" secondAttribute="trailing" constant="110" id="JFf-sZ-jSj"/>
+                <constraint firstItem="KW1-Ao-fAi" firstAttribute="leading" secondItem="wQ5-pJ-wx9" secondAttribute="leading" id="KeU-ka-NqG"/>
+                <constraint firstItem="wQ5-pJ-wx9" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="36" id="Vm5-Ff-QMj"/>
+                <constraint firstItem="Bwm-bu-Srm" firstAttribute="top" secondItem="y3t-CN-2wz" secondAttribute="bottom" constant="67" id="YZV-rc-k8B"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Bwm-bu-Srm" secondAttribute="trailing" constant="70" id="fFv-Tu-Rv3"/>
+                <constraint firstItem="y3t-CN-2wz" firstAttribute="top" secondItem="KW1-Ao-fAi" secondAttribute="bottom" constant="60" id="h9x-zX-DmM"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="wQ5-pJ-wx9" secondAttribute="trailing" constant="36" id="nJs-s5-dfT"/>
+                <constraint firstItem="Bwm-bu-Srm" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="70" id="rHV-oD-NX9"/>
+                <constraint firstItem="wQ5-pJ-wx9" firstAttribute="top" secondItem="avb-bO-RSo" secondAttribute="bottom" constant="80" id="rYi-93-Vln"/>
+                <constraint firstItem="avb-bO-RSo" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="80" id="uRN-i0-pCV"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="avb-bO-RSo" secondAttribute="trailing" constant="79" id="zhP-Dd-kPp"/>
+            </constraints>
+            <point key="canvasLocation" x="138.40000000000001" y="91.304347826086968"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="person" catalog="system" width="128" height="117"/>
+        <namedColor name="Black">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="LittleBoyBlue">
+            <color red="0.50196078431372548" green="0.64313725490196083" blue="0.92941176470588238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
